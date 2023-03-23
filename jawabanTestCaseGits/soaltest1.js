@@ -1,17 +1,17 @@
-function findMaxConsecutiveOnes(nums) {
-  let maxConsecutive = 0;
-  let currentConsecutive = 0;
+function jumlahmaximumberurut(nums) {
+  let maksimalberurut = 0;
+  let nilaiAwal = 0;
 
   for (let i = 0; i < nums.length; i++) {
     if (nums[i] === 1) {
-      currentConsecutive++;
-      maxConsecutive = Math.max(maxConsecutive, currentConsecutive);
+      nilaiAwal++;
+      maksimalberurut = Math.max(maksimalberurut, nilaiAwal);
     } else {
-      currentConsecutive = 0;
+      nilaiAwal = 0;
     }
   }
 
-  return maxConsecutive;
+  return maksimalberurut;
 }
-console.log(findMaxConsecutiveOnes([1, 1, 0, 1, 1, 1]));
-console.log(findMaxConsecutiveOnes([1, 0, 0, 1, 0, 1, 1]));
+console.log(jumlahmaximumberurut([1, 1, 0, 1, 1, 1]));
+console.log(jumlahmaximumberurut([1, 0, 0, 1, 0, 1, 1]));

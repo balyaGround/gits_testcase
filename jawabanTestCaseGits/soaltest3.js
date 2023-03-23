@@ -1,4 +1,4 @@
-function isBalanced(str) {
+function charSeimbang(str) {
   const stack = [];
   const pairs = {
     "}": "{",
@@ -22,5 +22,5 @@ function isBalanced(str) {
   return stack.length === 0 ? "YES" : "NO";
 }
 
-console.log(isBalanced("{ ( ( [ ] ) [ ] ) [ ] }"));
-console.log(isBalanced("{ [ ( ] ) }"));
+console.log(charSeimbang("{ ( ( [ ] ) [ ] ) [ ] }"));
+console.log(charSeimbang("{ [ ( ] ) }"));

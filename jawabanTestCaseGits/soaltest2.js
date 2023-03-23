@@ -1,8 +1,8 @@
-function reverseStringRecursive(str) {
+function balikinString(str) {
   if (str.length === 0) {
     return str;
   } else {
-    return reverseStringRecursive(str.slice(1)) + str[0];
+    return balikinString(str.slice(1)) + str[0];
   }
 }
-console.log(reverseStringRecursive(["h", "e", "l", "l", "o"]));
+console.log(balikinString(["h", "e", "l", "l", "o"]));
